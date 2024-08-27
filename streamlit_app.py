@@ -28,8 +28,6 @@ else:
     st.success(f"من المتوقع أن تكون غير مصاب بالسكري بنسبة احتمال تصل إلى {prediction_proba[0] * 100:.2f}%.")
 
 
-st.write("diabetes patient : ",round(output[0],2))
-
 
 from PIL import Image
 image1 = Image.open("diabetes_image.jpg")
