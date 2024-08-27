@@ -4,7 +4,7 @@ import numpy as np
 
 import pickle
 with open('model.pkl', 'rb') as file:
-model = pickle.load(file)
+ model = pickle.load(file)
 
 # Title of the app
 st.title('Diabetes Prediction App')
