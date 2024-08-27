@@ -20,4 +20,4 @@ output = model.predict([[Pregnancies,Glucose,blood_pressure,skin_thickness,Insul
 
 st.write("diabetes patient : ",round(output[0],2))
 image = Image.open("diabetes_image.jpg")
-st.image(image, caption="مرض السكري", use_column_width=True)
+st.image(image, caption="", use_column_width=True)
