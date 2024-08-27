@@ -7,11 +7,11 @@ with open('model3.pkl', 'rb') as file:
 
 st.title("diabetes patient")
 
-Pregnancies = st.sidebar.number_input('Pregnancies' , min_value=0.0 , max_value=20.0,value=1.0)
-Glucose = st.sidebar.number_input('Glucose' ,min_value= 0.0 ,max_value=200.0,value=1.0)
-blood_pressure =st.sidebar.number_input('blood_pressure' ,min_value=0.0 ,max_value= 130.0,value=1.0)
-skin_thickness =st.sidebar.number_input('skin_thickness' , min_value=0.0 , max_value=100.0,value=1.0)
-Insulin =  st.sidebar.number_input('Insulin' , min_value=0.0 , max_value=900.0,value=1.0)
+Pregnancies = st.sidebar.number_input('Pregnancies' , min_value=0 , max_value=20,value=1)
+Glucose = st.sidebar.number_input('Glucose' ,min_value= 0 ,max_value=200,value=1)
+blood_pressure =st.sidebar.number_input('blood_pressure' ,min_value=0 ,max_value= 130,value=1)
+skin_thickness =st.sidebar.number_input('skin_thickness' , min_value=0 , max_value=100,value=1)
+Insulin =  st.sidebar.number_input('Insulin' , min_value=0 , max_value=900,value=1)
 BMI =  st.sidebar.number_input('BMI' , min_value=0.0 , max_value=70.0,value=1.0)
 DiabetesPedigreeFunction =  st.sidebar.number_input('DiabetesPedigreeFunction' , min_value=0.0 , max_value=2.5,value=0.0)
 Age =  st.sidebar.number_input('Age' , min_value=15 , max_value=100,value=25)
