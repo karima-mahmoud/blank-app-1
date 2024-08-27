@@ -14,7 +14,7 @@ skin_thickness =st.sidebar.number_input('skin_thickness' , min_value=0.0 , max_v
 Insulin =  st.sidebar.number_input('Insulin' , min_value=0.0 , max_value=900.0,value=1.0)
 BMI =  st.sidebar.number_input('BMI' , min_value=0.0 , max_value=70.0,value=1.0)
 DiabetesPedigreeFunction =  st.sidebar.number_input('DiabetesPedigreeFunction' , min_value=0.0 , max_value=2.5,value=0.0)
-Age =  st.sidebar.number_input('Age' , min_value=15.0 , max_value=100.0,value=1.0)
+Age =  st.sidebar.number_input('Age' , min_value=15 , max_value=100,value=25)
 
 output = model.predict([[Pregnancies,Glucose,blood_pressure,skin_thickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
 prediction_proba = model.predict_proba([[Pregnancies,Glucose,blood_pressure,skin_thickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])[0]
