@@ -19,5 +19,8 @@ Age =  st.sidebar.number_input('Age' , min_value=0.0 , max_value=100.0,value=1.0
 output = model.predict([[Pregnancies,Glucose,blood_pressure,skin_thickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
 
 st.write("diabetes patient : ",round(output[0],2))
+
+
+from PIL import Image
 image = Image.open("diabetes_image.jpg")
 st.image(image, caption="", use_column_width=True)
