@@ -1,8 +1,8 @@
 import streamlit as st
 import numpy as np
 import pickle
-with open('model.pkl', 'rb') as file:
-model = pickle.load(file)
+#with open('model.pkl', 'rb') as file:
+#model = pickle.load(file)
 
 
 st.title('Diabetes Prediction App')
