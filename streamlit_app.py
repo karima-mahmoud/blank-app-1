@@ -17,7 +17,8 @@ DiabetesPedigreeFunction =  st.sidebar.number_input('DiabetesPedigreeFunction' ,
 Age =  st.sidebar.number_input('Age' , min_value=0.0 , max_value=100.0,value=1.0)
 
 output = model.predict([[Pregnancies,Glucose,blood_pressure,skin_thickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
-prediction_proba = model.predict_proba(scaled_data)[0]
+prediction_proba = model.predict_proba([[Pregnancies,Glucose,blood_pressure,skin_thickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])[0]
+
 if output[0] == 1:
     st.success(f"من المتوقع أن تكون مصاباً بالسكري بنسبة احتمال تصل إلى {prediction_proba[1] * 100:.2f}%.")
 else:
