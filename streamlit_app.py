@@ -7,7 +7,7 @@ with open('model3.pkl', 'rb') as file:
 
 st.title("diabetes patient")
 
-Pregnancies = st.number_input('Pregnancies' , min_value=0.0 , max_value=20.0,value=1.0)
+Pregnancies = st.sidebar.number_input('Pregnancies' , min_value=0.0 , max_value=20.0,value=1.0)
 Glucose = st.number_input('Glucose' , min_value=0.0 , max_value=220.0,value=1.0)
 blood_pressure =st.number_input('blood_pressure' , min_value=0.0 , max_value=150.0,value=1.0)
 skin_thickness =st.number_input('skin_thickness' , min_value=0.0 , max_value=100.0,value=1.0)
