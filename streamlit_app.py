@@ -41,11 +41,12 @@ st.write(input_df)
 
 input_data_scaled = scaler.transform(input_df)
 
-#prediction = model.predict(input_data_scaled)
-#prediction_proba = model.predict_proba(input_data_scaled)
+prediction = model.predict(input_data_scaled)
+prediction_proba = model.predict_proba(input_data_scaled)
 
-#st.subheader('Prediction')
-#diabetes_status = 'Diabetic' if prediction[0] == 1 else 'Non-diabetic'
+st.subheader('Prediction')
+
+diabetes_status = 'Diabetic' if prediction[0] == 1 else 'Non-diabetic'
 st.write(diabetes_status)
 
 st.subheader('Prediction Probability')
