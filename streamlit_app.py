@@ -22,6 +22,7 @@ st.write("diabetes patient : ",round(output[0],2))
 
 
 from PIL import Image
-image = Image.open("diabetes_image.jpg")
-image = Image.open("diabetesimage2.jpg")
-st.image(image, caption="", use_column_width=True)
+image1 = Image.open("diabetes_image.jpg")
+image2 = Image.open("diabetesimage2.jpg")
+st.image(image1, caption="", use_column_width=True)
+st.image(image2, caption="", use_column_width=True)
